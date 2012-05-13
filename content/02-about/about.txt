@@ -14,7 +14,7 @@ Text:
 Kirby is a flexible and lightweight file-based CMS, developed by (link: http://bastianallgeier.com text:Bastian Allgeier.)
 
 ## How I can use it?
-You have to download (link: http://getkirby.com text:Kirby) and the theme (link:http://github.com text:"Slacky"). After this replace  assets, content and site folder with the downloaded files.
+You have to download (link: http://getkirby.com text:Kirby) and the theme (link:https://github.com/Chail/Slacky---Blogtheme-for-Kirby text:"Slacky"). After this replace  assets, content and site folder with the downloaded files.
 
 Read the (link:http://getkirby.com/docs text:documentation) by Kirby. Don't be scared, it's so **simple**!
 
