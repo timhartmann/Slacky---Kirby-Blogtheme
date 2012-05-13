@@ -11,9 +11,9 @@
 Kirby is an flexible and lightweight file-based CMS, developed by [Bastian Allgeier.](http://bastianallgeier.com)**
 
 ## How I can use it?
-You must download **[Kirby](http://getkirby.com)** and the theme. After this replace  assets, content and site folder with the downloaded files.
+You have to download **[Kirby](http://getkirby.com)** and the theme. After this replace assets, content and site folder with the downloaded files.
 
-Read the **[documentation](http://getkirby.com/docs)** by Kirby. Don't be scary, it's so **simple**!
+Read the **[documentation](http://getkirby.com/docs)** by Kirby. Don't be scared, it's so **simple**!
 
 ## Change the color
 You can change the color of your theme (headlines,links) really simple.
@@ -21,7 +21,7 @@ You can change the color of your theme (headlines,links) really simple.
 (image: variable.png)
 Go to assets/css/style.scss, open it and replace the colorcode at the variable "$maincolor" with your own. After that copy all the code, open the website [Sass-Lang.com](http://sass-lang.com/try.html) and insert your code. 
 
-Click at the button "Render" and copy the code at the bottom. Now you must open the style.css and replace the code with yours.
+Click the button "Render" and copy the code at the bottom. Now you have to open the style.css and replace the code with yours.
 
 ## Demo
 See it live at http://slacky.geek-rocket.de/
