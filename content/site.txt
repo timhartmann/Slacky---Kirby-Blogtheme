@@ -1,0 +1,11 @@
+Title: Slacky - A free theme for Kirby
+----
+Author: Tim Hartmann
+----
+Description: Slacky is a free theme for the awesome CMS Kirby. 
+----
+Keywords: kirby, cms, kirbycms, php, geek-rocket, slacky, freebie, theme
+----
+Copyright: © 2012 Design & Development by (link: http://geek-rocket.de text: Tim Hartmann)
+----
+

@@ -1,0 +1,65 @@
+Title: About
+----
+Text: 
+## Features of "Slacky"
+* Switch the color-sheme (**Really easy**)
+* RSS-Feed
+* Auto-generated Thumbs
+* Sharing an article with twitter
+* Article-switching
+* Pagination
+* Contain a scss-file
+
+## What is Kirby?
+Kirby is a flexible and lightweight file-based CMS, developed by (link: http://bastianallgeier.com text:Bastian Allgeier.)
+
+## How I can use it?
+You have to download (link: http://getkirby.com text:Kirby) and the theme (link:http://github.com text:"Slacky"). After this replace  assets, content and site folder with the downloaded files.
+
+Read the (link:http://getkirby.com/docs text:documentation) by Kirby. Don't be scared, it's so **simple**!
+
+## Change the color
+You can change the color of your theme (headlines,links) really simple.
+
+(image: variable.png)
+Go to assets/css/style.scss, open it and replace the colorcode at the variable "$maincolor" with your own. After that copy all the code, open the website (link:http://sass-lang.com/try.html text:"Sass-Lang.com") and insert your code. 
+
+Click the button "Render" and copy the code at the bottom. Now you have to open the style.css and replace the code with yours.
+
+
+## How can I report a bug?
+I'm a human, a human can make some mistakes. You can report it me via <a href="mailto:tim.hartmann93@gmail.com">Mail</a> or contact me at the social networks (on the right side).
+
+## License
+You can use this theme for **free**. But this theme based on kirby and this cms is not free, you must purchase a license (30$).
+
+## My ToDo-List
+* Responsive
+* Categories
+
+----
+Description:
+### Download
+This theme is absolutly free. You can download this at **(link: http://github.com text: Github.)**
+----
+Myself:
+### The man behind "Slacky"
+I'm Tim Hartmann, 19 years old and a screendesigner and webdeveloper based in Germany. I make an education as a media-designer at the awesome agency **(link: http://neoskop.de text:"Neoskop")** since february 2012.
+
+You can follow me at **(link:http://twitter.com/WebOlymp text:Twitter), (link:https://plus.google.com/112297861605156001573/posts text:Google+), (link:http://dribbble.com/Chail93 text:Dribbble), (link:https://github.com/Chail text:Github.)** and my **(link:http://geek-rocket.de text:portfolio.)**
+----
+Photos:
+#### Photos
+All the photos for the preview are from a really good photographer "Jan Behre". Look at his **(link:http://www.flickr.com/photos/jcbehre text:portfolio)** for other fotos.
+
+
+----
+Gridsystem:
+#### Gridsystem
+I used for the grid **(link:http://960.gs text:960GS)**, created by Nathan Smith.
+----
+Webfonts:
+#### Google Webfonts
+I implement the font **"Open Sans Condensed"** with the **(link:http://www.google.com/webfonts text:Google Webfonts.)**
+
+
