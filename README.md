@@ -18,7 +18,6 @@ Read the **[documentation](http://getkirby.com/docs)** by Kirby. Don't be scared
 ## Change the color
 You can change the color of your theme (headlines,links) really simple.
 
-(image: variable.png)
 Go to assets/css/style.scss, open it and replace the colorcode at the variable "$maincolor" with your own. After that copy all the code, open the website [Sass-Lang.com](http://sass-lang.com/try.html) and insert your code. 
 
 Click the button "Render" and copy the code at the bottom. Now you have to open the style.css and replace the code with yours.
