@@ -341,7 +341,8 @@ aside .myself img {
 
 /*=== BLOGARTICLE ===*/
 .blog.article article header {
-  position: relative; }
+  position: relative;
+  height: 210px; }
   .blog.article article header .tweet a {
     background: url(../images/sprite.png) no-repeat;
     position: absolute;
