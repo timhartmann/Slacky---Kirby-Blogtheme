@@ -40,7 +40,7 @@ You can use this theme for **free**. But this theme based on kirby and this cms 
 ----
 Description:
 ### Download
-This theme is absolutly free. You can download this at **(link: http://github.com text: Github.)**
+This theme is absolutly free. You can download this at **(link: https://github.com/Chail/Slacky---Blogtheme-for-Kirby text: Github.)**
 ----
 Myself:
 ### The man behind "Slacky"
