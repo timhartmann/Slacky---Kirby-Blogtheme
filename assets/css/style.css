@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   font-family: helvetica, arial, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   background: url("../images/bg_body.jpg") repeat;
   line-height: 1; }
 
@@ -52,7 +52,7 @@ table {
 strong {
   font-weight: bold; }
 
-.content p, .content li {
+.content p, .content li, .content pre {
   color: #585858;
   line-height: 1.6em;
   margin: 5px 0 0; }
@@ -76,7 +76,8 @@ h1 {
 
 h2 {
   font-size: 36px;
-  color: #dc3628; }
+  color: #dc3628;
+  display: inline-block; }
 
 h3 {
   font-size: 22px;
@@ -171,7 +172,13 @@ a {
 .container_12 .grid_7 {
   width: 540px; }
 .container_12 .grid_8 {
-  width: 620px; }
+  width: 580px;
+  background: #FFF;
+  -webkit-box-shadow: 0 1px 1px #cdcdcd;
+  -moz-box-shadow: 0 1px 1px #cdcdcd;
+  -o-box-shadow: 0 1px 1px #cdcdcd;
+  box-shadow: 0 1px 1px #cdcdcd;
+  padding: 20px; }
 .container_12 .grid_9 {
   width: 700px; }
 .container_12 .grid_10 {
@@ -303,21 +310,25 @@ a {
 .header {
   background: url("../images/bg_ends.jpg") repeat-x;
   padding: 25px 0;
-  margin: 0 0 65px; }
+  margin: 0 0 35px; }
   .header .logo {
     float: left; }
 
 /*=== ASIDE ===*/
-aside section {
-  background: url(../images/cut.jpg) repeat-x bottom;
-  padding: 0 0 25px;
-  margin: 0 0 25px; }
-aside .myself img {
-  width: 75px;
-  margin: 0 10px 0 0;
-  float: left; }
+aside {
+  font-size: 14px; }
+  aside section {
+    background: url(../images/cut.jpg) repeat-x bottom;
+    padding: 0 0 25px;
+    margin: 0 0 25px; }
+  aside .myself img {
+    width: 75px;
+    margin: 0 10px 0 0;
+    float: left; }
 
 /*=== BLOG ===*/
+.home .header {
+  margin: 0 0 55px; }
 .home article {
   background: #FFF;
   padding: 15px;
@@ -334,10 +345,16 @@ aside .myself img {
   .home article .thumb {
     float: left;
     margin: -35px 25px 0 0; }
+    .home article .thumb:hover {
+      opacity: 0.7; }
   .home article .more {
     font-weight: bold;
     float: right;
     margin: 20px 0 0; }
+.home .grid_8 {
+  background: none;
+  padding: 0;
+  width: 620px; }
 
 /*=== BLOGARTICLE ===*/
 .blog.article article header {
@@ -346,20 +363,21 @@ aside .myself img {
   .blog.article article header .tweet a {
     background: url(../images/sprite.png) no-repeat;
     position: absolute;
-    margin: -212px 0 0;
+    top: 1px;
+    left: 0;
     width: 87px;
     height: 87px; }
   .blog.article article header .arrows {
     margin: -155px 0 0;
     position: absolute;
     right: 0;
-    text-indent: -9999px;
     display: block; }
     .blog.article article header .arrows .next a, .blog.article article header .arrows .prev a {
       width: 50px;
       height: 50px;
       display: block;
-      opacity: 0.8; }
+      opacity: 0.8;
+      text-indent: -9999px; }
       .blog.article article header .arrows .next a:hover, .blog.article article header .arrows .prev a:hover {
         background-color: #dc3628;
         -webkit-transition: opacity 0.9s ease-in;
@@ -371,13 +389,15 @@ aside .myself img {
       background: url(../images/sprite.png) no-repeat 17px -153px #333333;
       margin: 1px 0 0;
       display: block; }
+    .blog.article article header .arrows .next .tooltip {
+      margin: 25px 0 0 -40px; }
     .blog.article article header .arrows .prev a {
       background: url(../images/sprite.png) no-repeat 17px -93px #333333; }
 .blog.article article .content {
   background: #FFF;
   float: none;
   width: auto;
-  padding: 15px;
+  padding: 20px;
   -webkit-box-shadow: 0 1px 1px #cdcdcd;
   -moz-box-shadow: 0 1px 1px #cdcdcd;
   -o-box-shadow: 0 1px 1px #cdcdcd;
@@ -389,6 +409,9 @@ aside .myself img {
   .blog.article article .content img {
     border: 1px solid #ebebeb;
     padding: 5px; }
+.blog.article .grid_8 {
+  width: 620px;
+  padding: 0; }
 
 /*=== PAGINATION ===*/
 .pagination {
@@ -414,21 +437,9 @@ aside .myself img {
   margin: 25px 0 0; }
   .about h2:first-child {
     margin: 0; }
-.about .content p, .about .content li {
-  font-size: 16px; }
 .about .content ul {
   list-style: circle;
   margin: 0 0 0 18px; }
-.about aside p {
-  font-size: 13px !important; }
-.about .grid_8 {
-  background: #FFF;
-  -webkit-box-shadow: 0 1px 1px #cdcdcd;
-  -moz-box-shadow: 0 1px 1px #cdcdcd;
-  -o-box-shadow: 0 1px 1px #cdcdcd;
-  box-shadow: 0 1px 1px #cdcdcd; }
-  .about .grid_8 article {
-    padding: 15px; }
 
 /*=== ERROR ===*/
 .error h1 {
@@ -458,10 +469,11 @@ aside .myself img {
 
 /*=== FOOTER ===*/
 .footer {
-  background: url("../images/bg_ends.jpg") repeat-x;
+  background: url("../images/bg_ends.jpg") repeat;
   padding: 30px 0 64px;
   margin: 50px 0 0;
-  color: #949699; }
+  color: #949699;
+  min-height: 150px; }
   .footer p {
     text-shadow: 0 1px 0 #171b21; }
   .footer a {

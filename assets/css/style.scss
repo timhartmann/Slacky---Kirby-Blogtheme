@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   font-family: helvetica, arial, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   background: url("../images/bg_body.jpg") repeat;
   line-height: 1;
 }
@@ -61,7 +61,7 @@ strong {
   font-weight: bold;
 }
 
-.content p, .content  li {
+.content p, .content  li, .content pre {
   color: #585858;
   line-height: 1.6em;
   margin: 5px 0 0;
@@ -91,7 +91,7 @@ h1 {
 h2 {
   font-size: 36px;
   color: $maincolor;
-
+  display: inline-block;
 }
 h3 {
   font-size: 22px;
@@ -210,7 +210,13 @@ a {
     width: 540px;
   }
   .grid_8 {
-    width: 620px;
+    width: 580px;
+    background: #FFF;
+    -webkit-box-shadow: 0 1px 1px #cdcdcd;
+    -moz-box-shadow: 0 1px 1px #cdcdcd;
+    -o-box-shadow: 0 1px 1px #cdcdcd;
+    box-shadow: 0 1px 1px #cdcdcd;
+    padding: 20px;
   }
   .grid_9 {
     width: 700px;
@@ -415,7 +421,7 @@ a {
 .header {
   background: url("../images/bg_ends.jpg") repeat-x;
   padding: 25px 0;
-  margin: 0 0 65px;
+  margin: 0 0 35px;
 
   .logo {
     float: left;
@@ -425,6 +431,8 @@ a {
 /*=== ASIDE ===*/
 
 aside {
+  font-size: 14px;
+
   section {
     background: url(../images/cut.jpg) repeat-x bottom;
     padding: 0 0 25px;
@@ -442,6 +450,9 @@ aside {
 /*=== BLOG ===*/
 
 .home {
+  .header {
+    margin: 0 0 55px;
+  }
   article {
     background: #FFF;
     padding: 15px;
@@ -462,6 +473,10 @@ aside {
     .thumb {
       float: left;
       margin: -35px 25px 0 0;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
     .more {
       font-weight: bold;
@@ -469,6 +484,11 @@ aside {
       margin: 20px 0 0;
     }
   }
+  .grid_8 {
+      background: none;
+      padding: 0;
+      width: 620px;
+    }
 }
 
 /*=== BLOGARTICLE ===*/
@@ -482,7 +502,8 @@ aside {
       .tweet a {
         background: url(../images/sprite.png) no-repeat;
         position: absolute;
-        margin: -212px 0 0;
+        top: 1px;
+        left: 0;
         width: 87px;
         height: 87px;
       }
@@ -490,7 +511,6 @@ aside {
         margin: -155px 0 0;
         position: absolute;
         right: 0;
-        text-indent: -9999px;
         display: block;
        
         .next a, .prev a{
@@ -498,6 +518,7 @@ aside {
           height: 50px;
           display: block;
           opacity: 0.8;
+          text-indent: -9999px;
 
           &:hover {
             background-color: $maincolor;
@@ -509,10 +530,15 @@ aside {
           }
         }
 
-        .next a{
-          background: url(../images/sprite.png) no-repeat 17px -153px #333;
-          margin: 1px 0 0;
-          display: block;
+        .next {
+          a {
+            background: url(../images/sprite.png) no-repeat 17px -153px #333;
+            margin: 1px 0 0;
+            display: block;
+          }
+          .tooltip {
+            margin: 25px 0 0 -40px;
+          }
         } 
         .prev a{
           background: url(../images/sprite.png) no-repeat 17px -93px #333;
@@ -524,7 +550,7 @@ aside {
       background: #FFF;
       float: none;
       width: auto;
-      padding: 15px;
+      padding: 20px;
       -webkit-box-shadow: 0 1px 1px #cdcdcd;
       -moz-box-shadow: 0 1px 1px #cdcdcd;
       -o-box-shadow: 0 1px 1px #cdcdcd;
@@ -542,6 +568,10 @@ aside {
         padding: 5px;
       }
     } 
+  }
+  .grid_8 {
+    width: 620px;
+    padding: 0;
   }
 }
 
@@ -582,26 +612,9 @@ aside {
       margin: 0;
     }
   }
-  .content p,.content li {
-    font-size:16px;
-  }
   .content ul {
     list-style: circle;
     margin: 0 0 0 18px;
-  }
-  aside p {
-    font-size: 13px !important;
-  }
-  .grid_8 {
-    background: #FFF;
-    -webkit-box-shadow: 0 1px 1px #cdcdcd;
-    -moz-box-shadow: 0 1px 1px #cdcdcd;
-    -o-box-shadow: 0 1px 1px #cdcdcd;
-    box-shadow: 0 1px 1px #cdcdcd;
-
-    article {
-      padding: 15px;
-    }
   }
 }
 
@@ -646,10 +659,11 @@ aside {
 /*=== FOOTER ===*/
 
 .footer {
-  background: url("../images/bg_ends.jpg") repeat-x;
+  background: url("../images/bg_ends.jpg") repeat;
   padding: 30px 0 64px;
   margin: 50px 0 0;
   color: $footercolor;
+  min-height: 150px;
 
   p {
     text-shadow: 0 1px 0 #171b21;
