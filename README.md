@@ -6,6 +6,7 @@
 * Article-switching
 * Pagination
 * Contain a scss-file
+* **Responsive**
 
 ## What is Kirby?
 Kirby is an flexible and lightweight file-based CMS, developed by [Bastian Allgeier.](http://bastianallgeier.com)**
