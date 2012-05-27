@@ -63,7 +63,7 @@ strong {
 
 .content p, .content  li, .content pre {
   color: #585858;
-  line-height: 1.6em;
+  line-height: 1.7em;
   margin: 5px 0 0;
 }
 
@@ -502,10 +502,15 @@ aside {
       .tweet a {
         background: url(../images/sprite.png) no-repeat;
         position: absolute;
-        top: 1px;
+        top: 0;
         left: 0;
         width: 87px;
         height: 87px;
+
+        &:hover {
+          background-position: 0 -220px;
+          display: pointer;
+        }
       }
       .arrows {
         margin: -155px 0 0;
@@ -521,12 +526,11 @@ aside {
           text-indent: -9999px;
 
           &:hover {
-            background-color: $maincolor;
-            -webkit-transition: opacity 0.9s ease-in;
-            -o-transition: opacity 0.9s ease-in;
-            -moz-transition: opacity 0.9s ease-in;
-            opacity: 1;
+            -webkit-transition: background-color 0.3s ease-in;
+            -o-transition: background-color 0.3s ease-in;
+            -moz-transition: background-color 0.3s ease-in;
             cursor: pointer;
+            background-color: $maincolor;
           }
         }
 

@@ -54,7 +54,7 @@ strong {
 
 .content p, .content li, .content pre {
   color: #585858;
-  line-height: 1.6em;
+  line-height: 1.7em;
   margin: 5px 0 0; }
 
 blockquote {
@@ -363,10 +363,13 @@ aside {
   .blog.article article header .tweet a {
     background: url(../images/sprite.png) no-repeat;
     position: absolute;
-    top: 1px;
+    top: 0;
     left: 0;
     width: 87px;
     height: 87px; }
+    .blog.article article header .tweet a:hover {
+      background-position: 0 -220px;
+      display: pointer; }
   .blog.article article header .arrows {
     margin: -155px 0 0;
     position: absolute;
@@ -379,12 +382,11 @@ aside {
       opacity: 0.8;
       text-indent: -9999px; }
       .blog.article article header .arrows .next a:hover, .blog.article article header .arrows .prev a:hover {
-        background-color: #dc3628;
-        -webkit-transition: opacity 0.9s ease-in;
-        -o-transition: opacity 0.9s ease-in;
-        -moz-transition: opacity 0.9s ease-in;
-        opacity: 1;
-        cursor: pointer; }
+        -webkit-transition: background-color 0.3s ease-in;
+        -o-transition: background-color 0.3s ease-in;
+        -moz-transition: background-color 0.3s ease-in;
+        cursor: pointer;
+        background-color: #dc3628; }
     .blog.article article header .arrows .next a {
       background: url(../images/sprite.png) no-repeat 17px -153px #333333;
       margin: 1px 0 0;
