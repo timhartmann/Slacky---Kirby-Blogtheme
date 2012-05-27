@@ -9,12 +9,12 @@
 					<div class="arrows">
 						<div class="prev">
 							<?php if($page->hasPrevVisible()): ?>
-								<a href="<?php echo $page->prev()->url() ?>">Vorheriger Artikel</a>
+								<a href="<?php echo $page->prev()->url() ?>">previous article</a>
 							<?php endif ?>
 						</div>
 						<div class="next">
 							<?php if($page->hasNextVisible()): ?>
-								<a href="<?php echo $page->next()->url() ?>">Nächster Artikel</a>
+								<a href="<?php echo $page->next()->url() ?>">next article</a>
 							<?php endif ?>
 						</div>
 					</div>

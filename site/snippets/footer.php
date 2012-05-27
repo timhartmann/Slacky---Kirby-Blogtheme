@@ -4,7 +4,6 @@
     	<span class="copyright"><?php echo kirbytext($site->copyright()) ?></span>
     </div>
   </footer>
-
 </body>
 
 </html>

@@ -6,11 +6,9 @@
 	<section class="grid_8">
 		<?php foreach($articles as $article): ?>
 			<article class="group">
-				<div class="thumb">
-					<a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
-						<?php echo thumb($article->images()->find('headimage.jpg'), array('width' => 130, 'crop' => true)) ?>
+					<a class="thumb" href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
+						<img src="<?php echo thumb($article->images()->find('headimage.jpg'), array('width' => 130, 'crop' => true), false) ?>">
 					</a>
-				</div>
 				<div class="content">
 					<hgroup>
 						 <a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>"><h2><?php echo $article->title() ?></h2></a>

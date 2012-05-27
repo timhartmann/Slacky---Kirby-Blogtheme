@@ -9,6 +9,7 @@ Text:
 * Article-switching
 * Pagination
 * Contain a scss-file
+* **Responsive**
 
 ## What is Kirby?
 Kirby is a flexible and lightweight file-based CMS, developed by (link: http://bastianallgeier.com text:Bastian Allgeier.)
@@ -32,10 +33,6 @@ I'm a human, a human can make some mistakes. You can report it me via <a href="m
 
 ## License
 You can use this theme for **free**. But this theme based on kirby and this cms is not free, you must purchase a license (30$).
-
-## My ToDo-List
-* Responsive
-* Categories
 
 ----
 Description:
