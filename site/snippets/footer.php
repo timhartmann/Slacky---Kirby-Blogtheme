@@ -5,5 +5,5 @@
     </div>
   </footer>
 </body>
-
+<script src="../../assets/js/respond.min.js"></script>
 </html>
