@@ -24,7 +24,7 @@
 						<h2><?php echo $page->title() ?></h2>
 						<h3>Released at <strong><?php echo $page->releasedate() ?></strong></h3>
 					</hgroup>
-					<p><?php echo kirbytext($page->text()) ?></p>
+					<?php echo kirbytext($page->text()) ?>
 				</div>
 			</article>
 	</section>
