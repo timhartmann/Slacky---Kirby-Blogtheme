@@ -4,6 +4,6 @@
     	<span class="copyright"><?php echo kirbytext($site->copyright()) ?></span>
     </div>
   </footer>
+  <script src="../../assets/js/respond.min.js"></script>
 </body>
-<script src="../../assets/js/respond.min.js"></script>
 </html>
