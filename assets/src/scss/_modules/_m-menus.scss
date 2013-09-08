@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.m-menu {
+  font-family: $baseFontFamily;
+  @include font-size(2.6);
+
+  li {
+    float: left;
+    margin: 0 0 0 90px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}

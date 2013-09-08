@@ -2,13 +2,13 @@
 
 <?php $articles = $page->children()->visible() ?>
 
-<section class="content container_12 group">
-	<section class="grid_8">
-		<article class="group">
+<main class="l-row l-cols group" role="main">
+	<section class="l-matter l-col-8">
+		<article class="m-box">
 				<?php echo kirbytext($page->text) ?>
 		</article>
 	</section>
-	<aside class="grid_4">
+	<aside class="l-col-4">
 		<section>
 			<?php echo kirbytext($page->description()) ?>
 		</section>
@@ -25,6 +25,6 @@
 			<?php echo kirbytext($page->webfonts()) ?>
 		</section>
 	</aside>
-</section>
+</main>
 
 <?php snippet('footer') ?>
