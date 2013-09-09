@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.m-pagination {
+  margin: 35px 0 0;
+
+  .m-pagination__next, .m-pagination__prev {
+    padding: 10px;
+
+    border: 1px solid #cdcdcd;
+
+    background: $white;
+    @include box-shadow(0 1px 1px #cdcdcd);
+
+    font-weight: bold;
+  }
+  .m-pagination__prev {
+    float: right;
+  }
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.l-post-view {
+  .l-matter {
+    .m-post {
+      .m-post__content {
+        float: none;
+        padding: 20px;
+        width: auto;
+
+        @include box-shadow(0 1px 1px #cdcdcd);
+
+        h2 {
+          @include font-size(4.5);
+        }
+        img {
+          padding: 5px;
+
+          border: 1px solid #ebebeb;
+        }
+      }
+    }
+  }
+}

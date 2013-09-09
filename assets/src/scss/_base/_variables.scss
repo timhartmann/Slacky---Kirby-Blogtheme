@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// colors
+$white: #fff;
+$black: #000;
+$gray: #999;
+
+$maincolor: #dc3628;
+$footercolor: #949699;
+
+// typography
+$baseFontSize: 16;
+$baseFontFamily: 'Open Sans Condensed', Helvetica, sans-serif;
+$alternativeFontFamily: Helvetica, Arial, Sans-Serif;
+
+// Cols
+$max-wrapper-width: 920px;
+$cols: 12;
+$gutter-width: 20px;
+$prevent-spacing: 1em;
+$breakpoints: 'mobile-landscape' 480px, 'smaller-tablet' 600px, 'tablet' 768px, 'tablet-landscape' $max-wrapper-width, 'desktop' 1200px;

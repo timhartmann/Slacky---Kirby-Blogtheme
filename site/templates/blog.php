@@ -2,47 +2,47 @@
 
 <?php $articles = $page->children()->visible()->flip()->paginate(5) ?>
 
-<section class="content container_12 group">
-	<section class="grid_8">
+<main class="l-row l-cols group" role="main">
+	<section class="l-matter l-col-8">
 		<?php foreach($articles as $article): ?>
-			<article class="group">
-					<a class="thumb" href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
-						<img src="<?php echo thumb($article->images()->find('headimage.jpg'), array('width' => 130, 'crop' => true), false) ?>">
+			<article class="m-post group">
+					<a class="m-post__thumb" href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
+						<img src="<?php echo thumb($article->images()->find('headimage.jpg'), array('width' => 130, 'height' => 130, 'crop' => true), false) ?>">
 					</a>
-				<div class="content">
-					<hgroup>
-						 <a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>"><h2><?php echo $article->title() ?></h2></a>
-						 <h3>Released at <strong><?php echo $article->releasedate() ?></strong></h3>
-					</hgroup>
+				<div class="m-post__content">
+					<h2>
+						<a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>"><?php echo $article->title() ?></a>
+					</h2>
+					<h3>Released at <strong><?php echo $article->releasedate() ?></strong></h3>
 					<p><?php echo excerpt($article->text(), 300) ?></p>
-					<a class="more" href="<?php echo $article->url() ?>">Read more…</a>
+					<a class="m-post__more" href="<?php echo $article->url() ?>">Read more…</a>
 				</div>
 			</article>
  		<?php endforeach ?>
  		<?php if($articles->pagination()->hasPages()): ?>
-			<nav class="pagination">  
+			<nav class="m-pagination">
 
 			  <?php if($articles->pagination()->hasNextPage()): ?>
-			  <a class="next" href="<?php echo $articles->pagination()->nextPageURL() ?>">Newer posts</a>
+			  <a class="m-pagination__next" href="<?php echo $articles->pagination()->nextPageURL() ?>">Newer posts</a>
 			  <?php endif ?>
 
 			  <?php if($articles->pagination()->hasPrevPage()): ?>
-			  <a class="prev" href="<?php echo $articles->pagination()->prevPageURL() ?>">Older posts </a>
+			  <a class="m-pagination__prev" href="<?php echo $articles->pagination()->prevPageURL() ?>">Older posts </a>
 			  <?php endif ?>
 
 			</nav>
 		<?php endif ?>
 	</section>
-	<aside class="grid_4">
-		<section class="myself">
+	<aside class="l-col-4">
+		<section class="m-widget">
 			<?php echo markdown($pages->find('blog/about')->title()) ?>
 			<img src="<?php echo $pages->find('blog/about')->images()->find('myself.jpg')->url() ?>">
 			<?php echo kirbytext($pages->find('blog/about')->text()) ?>
 		</section>
-		<section>	
+		<section>
 			<?php echo kirbytext($pages->find('blog')->description()) ?>
 		</section>
 	</aside>
-</section>
+</main>
 
 <?php snippet('footer') ?>

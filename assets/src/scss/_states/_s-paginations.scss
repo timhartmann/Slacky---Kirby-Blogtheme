@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.m-pagination {
+  .m-pagination__arrows__prev, .m-pagination__arrows__next {
+    &:hover {
+      background: $maincolor;
+
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

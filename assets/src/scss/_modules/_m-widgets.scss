@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.m-widget {
+  img {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 75px;
+  }
+  img + p {
+    margin-top: 0;
+  }
+}
