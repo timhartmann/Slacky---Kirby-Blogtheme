@@ -82,10 +82,12 @@ body {
 }
 
 blockquote {
-  margin: 20px 0 20px 15px;
-  border-left: 2px solid #ebebeb;
-  color: #ebebeb;
+  margin: 25px 0 25px 15px;
+  border-left: 2px solid #999999;
+  color: #999999;
   font-style: italic;
+  font-size: 17px;
+  font-size: 1.7rem;
 }
 blockquote p {
   padding: 0 0 0 10px !important;
@@ -107,16 +109,25 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+ul, ol {
+  list-style: circle;
+  margin-left: 1.2em;
+  margin-top: 1em;
+}
+ul:first-child, ol:first-child {
+  margin-top: 0;
+}
+
+h1, h2 {
   margin-bottom: 0;
   margin-top: 1em;
   font-family: "Open Sans Condensed", Helvetica, sans-serif;
   text-transform: uppercase;
 }
-h1:first-child, h2:first-child, h3:first-child {
+h1:first-child, h2:first-child {
   margin-top: 0;
 }
-h1 + p, h2 + p, h3 + p {
+h1 + p, h2 + p {
   margin-top: .5em;
 }
 
@@ -137,15 +148,31 @@ h2 + h3 {
 }
 
 h3 {
+  margin-bottom: 0;
+  margin-top: 1em;
   font-size: 22px;
   font-size: 2.2rem;
   color: black;
 }
+h3:first-child {
+  margin-top: 0;
+}
+h3 + p {
+  margin-top: 0em;
+}
 
 h4 {
+  margin-bottom: 0;
+  margin-top: 1em;
   font-size: 15px;
   font-size: 1.5rem;
   font-weight: bold;
+}
+h4:first-child {
+  margin-top: 0;
+}
+h4 + p {
+  margin-top: 0;
 }
 
 .l-banner {
@@ -153,17 +180,21 @@ h4 {
   margin-bottom: 50px;
   background: url("../images/bg_ends.jpg") repeat;
 }
-.l-banner .l-row {
-  text-align: justify;
+@media screen and (min-width: 600px) {
+  .l-banner .l-row {
+    text-align: justify;
+  }
+  .l-banner .l-row:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
 }
-.l-banner .l-row:after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-.l-banner .l-banner__logo, .l-banner .m-menu {
-  display: inline-block;
-  vertical-align: middle;
+@media screen and (min-width: 600px) {
+  .l-banner .l-banner__logo, .l-banner .m-menu {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .l-banner__logo a {
@@ -316,25 +347,6 @@ aside section {
   }
 }
 
-.l-post-view .l-matter .m-post {
-  padding: 0;
-}
-.l-post-view .l-matter .m-post header {
-  max-height: 210px;
-  position: relative;
-}
-.l-post-view .l-matter .m-post header .m-post__tweet a {
-  height: 87px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 87px;
-  background: url(../images/sprite.png) no-repeat;
-}
-.l-post-view .l-matter .m-post header .m-post__tweet a:hover {
-  display: pointer;
-  background-position: 0 -220px;
-}
 .l-post-view .l-matter .m-post .m-post__content {
   float: none;
   padding: 20px;
@@ -343,10 +355,7 @@ aside section {
   -moz-box-shadow: 0 1px 1px #cdcdcd;
   box-shadow: 0 1px 1px #cdcdcd;
 }
-.l-post-view .l-matter .m-post .m-post__content hgroup {
-  margin: 0 0 15px;
-}
-.l-post-view .l-matter .m-post .m-post__content hgroup h2 {
+.l-post-view .l-matter .m-post .m-post__content h2 {
   font-size: 45px;
   font-size: 4.5rem;
 }
@@ -388,16 +397,24 @@ aside section {
   font-weight: bold;
 }
 
-.m-menu {
+.m-menu ul {
+  list-style: none;
+  margin-left: 0;
+  margin-top: .5em;
   font-family: "Open Sans Condensed", Helvetica, sans-serif;
   font-size: 26px;
   font-size: 2.6rem;
 }
-.m-menu li {
+@media screen and (min-width: 600px) {
+  .m-menu ul {
+    margin-left: 1em;
+  }
+}
+.m-menu ul li {
   float: left;
   margin: 0 0 0 90px;
 }
-.m-menu li:first-child {
+.m-menu ul li:first-child {
   margin: 0;
 }
 
@@ -432,10 +449,22 @@ aside section {
 .m-post:first-child {
   margin: 0;
 }
+.m-post header {
+  max-height: 210px;
+  position: relative;
+}
 .m-post .m-post__content {
   float: right;
   padding: 4%;
   width: 64%;
+}
+.m-post .m-post__tweet a {
+  height: 87px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 87px;
+  background: url(../images/sprite.png) no-repeat;
 }
 .m-post .m-post__thumb {
   float: left;
@@ -518,6 +547,10 @@ a:hover {
   -moz-transition: background-color 0.3s ease-in;
   -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
+}
+.m-post .m-post__tweet a:hover {
+  display: pointer;
+  background-position: 0 -220px;
 }
 
 .m-menu li a:hover {

@@ -9,11 +9,24 @@
   &:first-child {
     margin: 0;
   }
+  header {
+    max-height: 210px;
+    position: relative;
+  }
 
   .m-post__content {
     float: right;
     padding: 4%;
     width: 64%;
+  }
+  .m-post__tweet a {
+    height: 87px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 87px;
+
+    background: url(../images/sprite.png) no-repeat;
   }
   .m-post__thumb {
     float: left;

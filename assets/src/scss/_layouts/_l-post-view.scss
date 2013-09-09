@@ -3,29 +3,6 @@
 .l-post-view {
   .l-matter {
     .m-post {
-      padding: 0;
-
-      header {
-        max-height: 210px;
-        position: relative;
-
-        .m-post__tweet a {
-          height: 87px;
-          left: 0;
-          position: absolute;
-          top: 0;
-          width: 87px;
-
-          background: url(../images/sprite.png) no-repeat;
-
-          &:hover {
-            display: pointer;
-
-            background-position: 0 -220px;
-          }
-        }
-      }
-
       .m-post__content {
         float: none;
         padding: 20px;
@@ -33,12 +10,8 @@
 
         @include box-shadow(0 1px 1px #cdcdcd);
 
-        hgroup {
-          margin: 0 0 15px;
-
-          h2 {
-            @include font-size(4.5);
-          }
+        h2 {
+          @include font-size(4.5);
         }
         img {
           padding: 5px;

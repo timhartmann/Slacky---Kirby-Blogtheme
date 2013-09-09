@@ -7,17 +7,21 @@
   background: url("../images/bg_ends.jpg") repeat;
 
   .l-row {
-    text-align: justify;
+    @include respond-to('smaller-tablet') {
+      text-align: justify;
 
-    &:after {
-      content: '';
-      display: inline-block;
-      width: 100%;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
     }
   }
   .l-banner__logo, .m-menu {
-    display: inline-block;
-    vertical-align: middle;
+    @include respond-to('smaller-tablet') {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
 .l-banner__logo a {
