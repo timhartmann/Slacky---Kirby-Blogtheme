@@ -1,0 +1,14 @@
+.m-post {
+  .m-post__arrows a:hover {
+    cursor: pointer;
+
+    background-color: $maincolor;
+
+    @include transition(background-color 0.3s ease-in);
+  }
+  .m-post__tweet a:hover {
+    display: pointer;
+
+    background-position: 0 -220px;
+  }
+}

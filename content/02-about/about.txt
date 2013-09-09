@@ -49,11 +49,6 @@ Photos:
 #### Photos
 All the photos for the preview are from a really good photographer "Jan Behre". Look at his **(link:http://www.flickr.com/photos/jcbehre text:portfolio)** for other fotos.
 
-
-----
-Gridsystem:
-#### Gridsystem
-I used for the grid **(link:http://960.gs text:960GS)**, created by Nathan Smith.
 ----
 Webfonts:
 #### Google Webfonts

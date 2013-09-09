@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.m-menu li {
+  a:hover {
+    color: $maincolor;
+  }
+  &.is-active a {
+    color: $maincolor;
+  }
+}
