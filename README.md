@@ -1,5 +1,5 @@
 ## Preview
-
+![](http://geek-rocket.de/slacky.png)
 ### <a href="http://slacky.geek-rocket.de/">Demo</a>
 
 ## Features of "Slacky"
