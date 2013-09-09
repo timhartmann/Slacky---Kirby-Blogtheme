@@ -19,9 +19,6 @@
 			<?php echo kirbytext($page->photos()) ?>
 		</section>
 		<section>
-			<?php echo kirbytext($page->gridsystem()) ?>
-		</section>
-		<section>
 			<?php echo kirbytext($page->webfonts()) ?>
 		</section>
 	</aside>

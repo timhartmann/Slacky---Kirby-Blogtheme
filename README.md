@@ -1,3 +1,7 @@
+## Preview
+
+### <a href="http://slacky.geek-rocket.de/">Demo</a>
+
 ## Features of "Slacky"
 * Switch the color-sheme (**Really easy**)
 * RSS-Feed
@@ -8,32 +12,72 @@
 * Contain a scss-file
 * **Responsive**
 
+## Dependencies
+* Node
+* Kirby
+* Grunt
+* Bower
+* Scss/Compass
+
+## Instruction
+
+**Using Grunt**
+    // start the watch-task
+    grunt watch
+
+    // Release a new version
+    grunt release:{type}
+
+**Using Bower**
+    // searching new dependencies
+    bower search {package-name}
+
+**Folder-Structure of Scss**
+
+    - scss
+    |-- _base
+    |--|-- _filename.scss
+    |-- _layouts
+    |--|-- _l-filename.scss
+    |-- _modules
+    |--|-- _m-filename.scss
+    |-- _states
+    |--|-- _s-filename.scss
+
+**Convention**
+
+    // modulename - Prefix: "m-"
+    // layoutname - Prefix "l-"
+    .m-modulename
+    .l-layoutname
+
+    // -- to create a modifier for this module
+    .m-modulename--modifier
+
+    // __ for declaring a child-element
+    .m-modulename__child-element
+
 ## What is Kirby?
 Kirby is an flexible and lightweight file-based CMS, developed by [Bastian Allgeier.](http://bastianallgeier.com)**
 
-## How I can use it?
-You have to download **[Kirby](http://getkirby.com)** and the theme. After this replace assets, content and site folder with the downloaded files.
+## Installing the theme
 
-Read the **[documentation](http://getkirby.com/docs)** by Kirby. Don't be scared, it's so **simple**!
+It's really easy to use this theme. You should only clone this repository.
 
-## Change the color
-You can change the color of your theme (headlines,links) really simple.
+    git clone git@github.com:timhartmann/Slacky---Kirby-Blogtheme.git
+    cd THEMEFOLDER
 
-Go to assets/css/style.scss, open it and replace the colorcode at the variable "$maincolor" with your own. After that copy all the code, open the website [Sass-Lang.com](http://sass-lang.com/try.html) and insert your code. 
+Download the Kirby-CMS from <a href="http://getkirby.com">**here**</a> and copy the kirby-folder.
+After this, you must put the folder to the theme.
 
-Click the button "Render" and copy the code at the bottom. Now you have to open the style.css and replace the code with yours.
-
-## Demo
-See it live at http://slacky.geek-rocket.de/
+## Changelog
+Take a look at the tags for it please.
 
 ## License
 You can use this theme for **free**. But this theme based on kirby and this cms is not free, you must purchase a license (30$).
 
 ## Photos
 All the photos for the preview are from a really good photographer "Jan Behre". Look at his **[portfolio](http://www.flickr.com/photos/jcbehre)** for other fotos.
-
-## Gridsystem
-I used for the grid **[960gs](http://960.gs)**, created by Nathan Smith.
 
 ## Google Webfonts
 I implement the font **"Open Sans Condensed"** with the **[Google Webfonts](http://www.google.com/webfonts)**
