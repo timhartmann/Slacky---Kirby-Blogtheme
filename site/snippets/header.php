@@ -11,7 +11,7 @@
   <link rel="shortcut icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
   <link rel="icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
 
-  <?php echo css('assets/build/stylesheets/application.css') ?>
+  <?php echo css('assets/build/stylesheets/application.min.css') ?>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 </head>
 
